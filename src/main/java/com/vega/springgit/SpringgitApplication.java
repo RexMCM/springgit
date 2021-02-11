@@ -8,6 +8,7 @@ public class SpringgitApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringgitApplication.class, args);
+
 	}
 
 }
