@@ -1,21 +1,23 @@
 package com.vega.springgit.domain;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
+@RequiredArgsConstructor
+@Getter @Setter
+@ToString
 @NoArgsConstructor
-@Data
 public class Comment extends Auditable{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
+    @NonNull
     private String body;
 
     @ManyToOne
+    @NonNull
     private Link link;
-
 }
