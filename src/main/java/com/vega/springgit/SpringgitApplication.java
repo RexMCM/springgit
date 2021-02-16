@@ -18,7 +18,7 @@ public class SpringgitApplication {
 		SpringApplication.run(SpringgitApplication.class, args);
 
 	}
-	@Bean
+//	@Bean
 	CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
 		return args -> {
 			Link link = new Link("Getting started with spring boot 2", "http://asas");
